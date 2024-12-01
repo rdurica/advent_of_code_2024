@@ -15,7 +15,7 @@ Advent of Code is an annual event where participants solve a series of programmi
 ## Progress
 Here's my progress. Each day represents a puzzle, and I'll mark them as complete as I finish solving them.
 
-- [x] [Day 1](day1/main.go)
+- [x] [Day 1](day01/main.go)
 - [ ] Day 2 
 - [ ] Day 3
 - [ ] Day 4
