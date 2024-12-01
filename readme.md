@@ -4,12 +4,41 @@
 
 Welcome to my Advent of Code repository!
 ## Overview
-Advent of Code is a yearly event where a set of programming puzzles are released for the public to solve. I have decided to complete the 2024 year's challenges using Go programming language mainly to learn it. This is my first touch with this language.
+Advent of Code is an annual event where participants solve a series of programming puzzles. For the 2024 edition, I’ve chosen to challenge myself by using Go programming language I'm just starting to explore. This is my first experience with Go, and I’m using it as an opportunity to dive into a new ecosystem and make learning more exciting.
 
 ## Goals and Limitations
-- I will not be attempting to complete all the days and challenges.
-- My main priority is to provide working solutions that demonstrate my understanding of the concepts and techniques required to solve the puzzles.
-- I will also be documenting my thought process and the reasoning behind my choices in the code comments, to help others understand how I approached the problem.
+- **Learning-Focused:** My primary goal is to learn Go by applying it to real-world problems in the form of these puzzles.
+- **Iterative Improvement:** From time to time, I’ll revisit and refine my solutions to improve code quality, explore new language features, or optimize performance.
+- **Practical Approach:** While I might not tackle every puzzle or complete all challenges, my focus is on creating solutions that work and showcase my progress.
+- **Transparency:** I’ll include comments in the code to document my thought process and highlight the reasoning behind key decisions.
+
+## Progress
+Here's my progress. Each day represents a puzzle, and I'll mark them as complete as I finish solving them.
+
+- [x] [Day 1](day1/main.go)
+- [ ] Day 2 
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
 
 ## Conclusion
 Please keep in mind that these solutions are my own and might not be the most optimal or the most beautiful, but they are the best I could come up with.

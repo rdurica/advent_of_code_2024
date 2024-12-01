@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+// https://adventofcode.com/2024/day/1
 func main() {
 	firstPart()
 	secondPart()
