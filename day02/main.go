@@ -14,6 +14,8 @@ func main() {
 	firstPart := firstPart()
 	fmt.Printf("Result of fist part: %d\n", firstPart)
 
+	secondPart := secondPart()
+	fmt.Printf("Result of second part: %d\n", secondPart)
 }
 
 // readFile reads puzzle file and parses it into a 2D array of integers
@@ -70,11 +72,60 @@ func firstPart() int {
 	return result
 }
 
+// Second part.
+func secondPart() int {
+	levels, err := readFile()
+	if err != nil {
+		panic(err.Error())
+	}
+
+	var result int
+	for i := 0; i < len(levels); i++ {
+		err := validateDifficulties(levels[i])
+
+		if err == nil {
+			result += 1
+			continue
+		}
+
+		// Incorrect difficulties, try to remove elements one by one and reuse already created functions
+		for skippedIndex := range levels[i] {
+
+			// first skip
+			if skippedIndex == 0 {
+				tmp := levels[i][1:]
+				err := validateDifficulties(tmp)
+				if err == nil {
+					result += 1
+					break
+				} else {
+					continue
+				}
+			}
+
+			// Check all other combinations
+			tmpFirst := levels[i][:skippedIndex]
+			tmpLast := levels[i][skippedIndex+1:]
+
+			var tmp []int
+			tmp = append(tmp, tmpFirst...)
+			tmp = append(tmp, tmpLast...)
+
+			err := validateDifficulties(tmp)
+			if err == nil {
+				result += 1
+				break
+			}
+		}
+	}
+
+	return result
+}
+
 // Validates if the levels are in same order (increasing or decreasing),
 // and if the difference between the levels is in range of 1 to 3.
 // If the levels are valid, the function returns nil, otherwise it returns an error.
 func validateDifficulties(levels []int) error {
-
 	difficultyIncreases := []int{}
 	diff := 0
 	lastIndex := len(levels) - 1
@@ -88,6 +139,7 @@ func validateDifficulties(levels []int) error {
 		diff = val - levels[i+1]
 		difficultyIncreases = append(difficultyIncreases, diff)
 	}
+
 	increasesCount, decreasesCount, misstakes := 0, 0, 0
 	for _, val := range difficultyIncreases {
 
