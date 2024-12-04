@@ -7,16 +7,17 @@ Welcome to my Advent of Code repository!
 Advent of Code is an annual event where participants solve a series of programming puzzles. For the 2024 edition, I’ve chosen to challenge myself by using Go programming language I'm just starting to explore. This is my first experience with Go, and I’m using it as an opportunity to dive into a new ecosystem and make learning more exciting.
 
 ## Goals and Limitations
-- **Learning-Focused:** My primary goal is to learn Go by applying it to real-world problems in the form of these puzzles.
-- **Iterative Improvement:** From time to time, I’ll revisit and refine my solutions to improve code quality, explore new language features, or optimize performance.
-- **Practical Approach:** While I might not tackle every puzzle or complete all challenges, my focus is on creating solutions that work and showcase my progress.
+- **Learning-focused:** My primary goal is to learn Go by applying it to real-world problems in the form of these puzzles.
+- **Iterative improvement:** From time to time, I’ll revisit and refine my solutions to improve code quality, explore new language features, or optimize performance.
+- **Practical approach:** While I might not tackle every puzzle or complete all challenges, my focus is on creating solutions that work and showcase my progress.
 - **Transparency:** I’ll include comments in the code to document my thought process and highlight the reasoning behind key decisions.
+- **Flexible pace:** I solve puzzles based on the time I have available, not necessarily every day, ensuring a sustainable and enjoyable learning process.
 
 ## Progress
 Here's my progress. Each day represents a puzzle, and I'll mark them as complete as I finish solving them.
 
 - [x] [Day 1](day01/main.go)
-- [ ] Day 2 
+- [ ] [Day 2](day02/main.go)
 - [ ] Day 3
 - [ ] Day 4
 - [ ] Day 5

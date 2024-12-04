@@ -18,7 +18,7 @@ func main() {
 // firstPart reads pairs of integers from a file, sorts them, and computes the
 // sum of the absolute differences between corresponding elements from two lists.
 func firstPart() {
-	inputFile, err := os.Open("input")
+	inputFile, err := os.Open("../input")
 	if err != nil {
 		fmt.Printf("Unable to read puzzle file: %s\n", err)
 		return
@@ -62,7 +62,7 @@ func firstPart() {
 // secondPart reads pairs of integers from a file, and computes the sum of the
 // occurances of each number in the first column multiplied by the number itself.
 func secondPart() {
-	inputFile, err := os.Open("input")
+	inputFile, err := os.Open("../input")
 	if err != nil {
 		fmt.Printf("Unable to read puzzle file: %s", err)
 		return
