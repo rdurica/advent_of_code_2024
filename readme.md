@@ -19,7 +19,7 @@ Here's my progress. Each day represents a puzzle, and I'll mark them as complete
 - [x] [Day 1](day01/main.go)
 - [x] [Day 2](day02/main.go)
 - [x] [Day 3](day03/main.go)
-- [ ] Day 4
+- [x] [Day 4](day04/main.go)
 - [ ] Day 5
 - [ ] Day 6
 - [ ] Day 7
